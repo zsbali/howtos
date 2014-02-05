@@ -1,0 +1,2 @@
+disable VT-x, AMD-V
+disable memory virtualization
