@@ -1,2 +1,15 @@
-#update
+# update
 sudo yum update -y
+
+# install git
+sudo yum install git -y
+
+# clone debian_scripts
+git clone https://github.com/zsbali/debian_scripts.git
+
+# install ruby
+~/debian_scripts/install_ruby.sh
+source ~/.rvm/scripts/rvm
+
+# install rails
+gem install rails
