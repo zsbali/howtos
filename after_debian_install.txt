@@ -1,0 +1,28 @@
+AFTER DEBIAN INSTALL
+
+# login as root, install sudo
+apt-get install sudo -y
+
+# install bc
+aot-get install bc -y
+
+# install ssh 
+{
+  apt-get install ssh -y
+  eval `ssh-agent -s`
+  cd ~/.ssh && ssh-keygen
+  cat id_rsa.pub
+  #then add to github
+}
+
+# add valaki to sudo
+adduser valaki sudo
+
+# install git
+sudo apt-get install git -y
+
+# clone debian_scripts
+sudo git clone https://github.com/zsbali/debian_scripts.git
+
+
+
