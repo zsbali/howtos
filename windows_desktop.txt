@@ -1,0 +1,6 @@
+chrome plugins:
+  fast dial
+  
+store links:
+  saved.io
+  
