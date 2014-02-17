@@ -30,6 +30,5 @@ sudo apt-get install bc git mc ssh -y
   #then add to github
 }
 
-
 # clone debian_scripts
 sudo git clone https://github.com/zsbali/debian_scripts.git
