@@ -1,0 +1,21 @@
+# given that you already prepared a preseed file and copied it to a USB drive
+
+# select the usb drive in virtualbox menu to make it seen for the guest os
+
+# Boot!
+# When the graphical installer menu appears, choose
+# Advanced options -> Automated install
+
+# then the installer asks for language, territory and keymap (choose what you want)
+
+# ...then it makes some hw detection, network configuration...
+
+# then asks for the location of preseed configuration file
+
+# go for a console
+# check usb drive:
+blkid
+
+# and mount:
+mount -t vfat /dev/sdb1 /mnt/usb
+
