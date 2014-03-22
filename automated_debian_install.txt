@@ -17,5 +17,6 @@
 blkid
 
 # and mount:
+mkdir /mnt/usb
 mount -t vfat /dev/sdb1 /mnt/usb
 
