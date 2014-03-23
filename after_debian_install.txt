@@ -11,8 +11,8 @@ apt-get upgrade
 #install sudo
 apt-get install sudo -y
 
-# create user "admin"
-createuser admin
+# add user "admin"
+adduser admin
 
 # add admin to sudo
 adduser admin sudo
