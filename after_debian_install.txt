@@ -26,7 +26,7 @@ sudo apt-get install bc git mc ssh -y
 {
   eval `ssh-agent -s`
   ssh-keygen
-  cat id_rsa.pub
+  cat .ssh/id_rsa.pub
   #then add to github
 }
 
