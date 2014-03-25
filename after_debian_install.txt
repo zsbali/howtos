@@ -22,6 +22,9 @@ adduser admin sudo
 # install some essential packages
 sudo apt-get install bc git mc ssh -y
 
+# set default editor
+sudo update-alternatives --all
+
 # create ssh public key
 {
   eval `ssh-agent -s`
