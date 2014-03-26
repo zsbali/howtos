@@ -1,4 +1,5 @@
 # If internet was not detected during install, teherfore was not set automatically, then we can do it later.
-# Suppose that NAT network interface is enabled in virtualbox.
+# Suppose that NAT network interface is enabled and it is selected under the first interface in virtualbox.
 sudo echo "iface eth0 inet dhcp" >> /etc/network/interfaces
 cat /etc/network/interfaces
+ifup eth0
