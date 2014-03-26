@@ -1,0 +1,9 @@
+# set console encoding, character support, font for the console:
+sudo dpkg-reconfigure console-setup
+
+
+# set boot resolution and console resolution
+sudo echo "GRUB_GFXMODE=1024x768" >> /etc/default/grub
+sudo echo "GRUB_GFXPAYLOAD_LINUX=keep" >> /etc/default/grub
+sudo update-grub2
+
