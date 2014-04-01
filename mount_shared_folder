@@ -1,0 +1,7 @@
+# set a shared folder in virtualbox config, make it permanent, don't set automount
+# (select a virtual machine -> config -> shared folders)
+
+#start virtual machine
+
+#mount it:
+sudo mount.vboxsf name_you_added_to_shared_folder /mnt/path_you_want
