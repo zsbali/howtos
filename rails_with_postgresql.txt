@@ -38,4 +38,6 @@ OR on ec2 instance
 
 
 #create database
+cd $new_app
 rake db:create
+cd ..
