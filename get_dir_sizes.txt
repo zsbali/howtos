@@ -1,0 +1,5 @@
+# get sizes of items in current directory
+#  - in human readable format
+#  - and sorted by human readable format
+
+du -hs ./* | sort -h
