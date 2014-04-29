@@ -1,5 +1,8 @@
-# get sizes of items in current directory
+# get sizes of items in current directory only
 #  - in human readable format
 #  - and sorted by human readable format
 
 du -hs ./* | sort -h
+
+# in all subdirectories recursively:
+du -h ./* | sort -h
