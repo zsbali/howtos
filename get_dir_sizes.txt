@@ -1,8 +1,10 @@
-# get sizes of items in current directory only
+# for all the directories in the current directory (./*)
+#  - makes a summary
 #  - in human readable format
-#  - and sorted by human readable format
+#
+# ...and sorts in human readable format
 
-du -hs ./* | sort -h
+du -sh ./* | sort -h
 
-# in all subdirectories recursively:
+# without -s (sum) it won't sum but goes recursively to subdirs and gives their sizes
 du -h ./* | sort -h
