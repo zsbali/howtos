@@ -5,5 +5,5 @@
 # Find the line starting with "linux /boot/..."
 
 # Append the following : "init=/bin/bash"
--> so bash will start instead of init daemon
+-> so bash will start instead of init script
 
