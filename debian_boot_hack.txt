@@ -1,9 +1,9 @@
 # Given that you see the boot menu (grub)
 
-# press ... to edit boot parameters
+# Select item and press 'e' to edit boot parameters
 
-# find the line starting with "linux ..."
+# Find the line starting with "linux /boot/..."
 
-# append the following : "init=/bin/bash"
+# Append the following : "init=/bin/bash"
 -> so bash will start instead of init daemon
 
