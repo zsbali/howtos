@@ -2,11 +2,9 @@ AFTER DEBIAN INSTALL
 
 # login as root
 
-# update package indexes
-apt-get update -y
+# update package indexes and upgrade system if necessary
+apt-get update -y && apt-get upgrade
 
-# upgrade system
-apt-get upgrade
 
 #install sudo
 apt-get install sudo -y
