@@ -1,0 +1,5 @@
+# generate new rails app
+rails new valami --database=postgresql -B
+bundle install --local
+
+
