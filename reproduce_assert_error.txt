@@ -1,5 +1,5 @@
 # generate new rails app
-rails new dummy -B
+rails new dummy --database=postgresql -B
 cd ./dummy
 bundle install --local
 
