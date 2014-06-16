@@ -15,6 +15,13 @@ group :test do
 end
 EOF
 
+# add RSpec to Gemfile
+cat << EOF >> Gemfile
+group :development, :test do
+  gem 'rspec-rails', '~> 2.0'
+end
+EOF
+
 # add tzinfo to Gemfile
 echo "gem 'tzinfo-data'" >> Gemfile
 
@@ -23,6 +30,9 @@ bundle install --local
 
 # install cucumber
 rails generate cucumber:install
+
+# install rspec
+rails generate rspec:install
 
 cat << EOF >> ./features/feature.feature
 Feature: feature
