@@ -1,5 +1,36 @@
 # generate new rails app
-rails new valami --database=postgresql -B
+rails new dummy -B
+cd ./dummy
 bundle install --local
 
+# add cucumber
+cat << EOF >> Gemfile
+group :test do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+end
+EOF
 
+bundle install --local
+
+# install tzinfo
+echo "gem 'tzinfo-data'" >> Gemfile
+bundle install --local
+
+# install cucumber
+rails generate cucumber:install
+
+cat << EOF >> ./features/feature.feature
+Feature: feature
+Scenario: scenario
+  When step
+EOF
+
+cat << EOF >> ./features/steps.rb
+When /step/ do
+  puts "hello"
+  assert true
+  puts "world"
+end
+EOF
