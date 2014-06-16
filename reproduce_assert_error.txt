@@ -3,7 +3,7 @@ rails new dummy -B
 cd ./dummy
 bundle install --local
 
-# setup config/database.yml
+# update config/database.yml !!!
 # ...
 
 # add cucumber
