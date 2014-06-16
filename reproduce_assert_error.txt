@@ -3,6 +3,9 @@ rails new dummy -B
 cd ./dummy
 bundle install --local
 
+# setup config/database.yml
+# ...
+
 # add cucumber
 cat << EOF >> Gemfile
 group :test do
