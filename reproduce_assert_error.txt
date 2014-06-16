@@ -6,7 +6,7 @@ bundle install --local
 # update config/database.yml !!!
 # ...
 
-# add cucumber
+# add cucumber to Gemfile
 cat << EOF >> Gemfile
 group :test do
   gem 'cucumber-rails', :require => false
@@ -15,10 +15,10 @@ group :test do
 end
 EOF
 
-bundle install --local
-
-# install tzinfo
+# add tzinfo to Gemfile
 echo "gem 'tzinfo-data'" >> Gemfile
+
+# install
 bundle install --local
 
 # install cucumber
@@ -37,3 +37,5 @@ When /step/ do
   puts "world"
 end
 EOF
+
+cucumber ./features/feature.feature -r features/
