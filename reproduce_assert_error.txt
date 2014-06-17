@@ -48,5 +48,5 @@ When /step/ do
 end
 EOF
 
-rake db:setup
+rake db:create
 cucumber ./features/feature.feature -r features/
