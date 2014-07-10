@@ -1,0 +1,12 @@
+# create a file with the commands you want to run at terminator start
+cat << EOF >> run_this_at_terminator_start.txt
+source ~/.bashrc
+cd trms-ng
+EOF
+
+# then configure terminator to run custom command as a shell
+right-click
+preferences -> profile -> command
+check in: "Run a custom command instead of my shell"
+specifiy the custom command: bash --rcfile ~/run_this_at_terminator_start.txt
+
