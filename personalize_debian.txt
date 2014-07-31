@@ -3,7 +3,7 @@ sudo dpkg-reconfigure console-setup
 
 
 # set boot resolution and console resolution
-echo "GRUB_GFXMODE=1024x768" | sudo tee --apeend /etc/default/grub
+echo "GRUB_GFXMODE=1024x768" | sudo tee --append /etc/default/grub
 echo "GRUB_GFXPAYLOAD_LINUX=keep" | sudo tee --append /etc/default/grub
 sudo update-grub2
 
