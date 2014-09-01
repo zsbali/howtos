@@ -6,5 +6,5 @@
 
 du -sh ./* | sort -h
 
-# without -s (sum) it won't sum but goes recursively to subdirs and gives their sizes
+# without -s (sum) it won't sum but goes recursively to subdirs, lists them, and gives their sizes
 du -h ./* | sort -h
