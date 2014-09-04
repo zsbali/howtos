@@ -30,5 +30,9 @@ sudo update-alternatives --all
   #then add to github
 }
 
-# clone debian_scripts
+# clone debian_scripts, debian_dotfiles
 git clone https://github.com/zsbali/debian_scripts.git
+git clone https://github.com/zsbali/debian_dotfiles.git
+
+# copying my profile to home
+cp ~/debian_dotfiles/profile2 ~
