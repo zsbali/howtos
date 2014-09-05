@@ -6,7 +6,7 @@
 # When the graphical installer menu appears, choose
 # Advanced options -> Automated install
 
-# then the installer asks for language, territory and keymap (choose what you want)
+# then the installer asks for language, location and keymap (choose what you want)
 
 # ...then it makes some hw detection, network configuration...
 
