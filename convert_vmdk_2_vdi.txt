@@ -1,4 +1,4 @@
 # assume you have a virtual machine in vmdk format
 # and you want to convert it to vdi
 
-c:\program files\oracle\virtualbox\vboxmanage" clonehd --format VDI original.vmdk new.vdi
+c:\program files\oracle\virtualbox\vboxmanage" clonehd original.vmdk new.vdi --format VDI
