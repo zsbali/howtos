@@ -1,1 +1,1 @@
-VBoxManage modifyhd --compact "[drive]:\[path_to_image_file]\[name_of_image_file].vdi"
+"c:\program files\oracle\virtualbox\vboxmanage.exe" --compact "[drive]:\[path_to_image_file]\[name_of_image_file].vdi"
