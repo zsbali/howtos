@@ -34,7 +34,7 @@ sudo update-alternatives --all
 git clone https://github.com/zsbali/debian_scripts.git
 
 # update profile
-~/debian_scripts/update_profile.sh
+~/debian_scripts/update_bashrc.sh
 
 # make sound!
 ~/debian_scripts/setup_ac97_audio.sh
