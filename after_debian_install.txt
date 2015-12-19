@@ -17,7 +17,7 @@ adduser admin sudo
 # logoff / login as admin
 
 # install some essential packages
-sudo apt-get install bc git mc ssh -y
+sudo apt-get install bc git mc ssh alsa-utils -y
 
 # set default editor
 sudo update-alternatives --all
